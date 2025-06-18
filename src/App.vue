@@ -4,8 +4,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div class="w-full h-[100vh]">
-    <RouterView name="TopSideBar" class="view w-full order-2"></RouterView>
-    <RouterView class="view main-content w-full order-2"></RouterView>
+    <RouterView name="TopSideBar"></RouterView>
+    <RouterView class="h-[90vh] py-[1rem] px-[2rem]"></RouterView>
   </div>
 </template>
 

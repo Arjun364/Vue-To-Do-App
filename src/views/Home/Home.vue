@@ -2,7 +2,7 @@
         
 </script>
 <template>
-    <div>
+    <div class="h-[90vh]">
         Home page
     </div>
 </template>
