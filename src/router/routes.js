@@ -5,6 +5,7 @@ import Dashboard from "@/views/Dashboard/Dashboard.vue"
 import TaskList from "@/views/TaskList/TaskList.vue"
 import Notfound from "@/views/NotFound/Notfound.vue"
 import AddTask from "@/views/TaskList/AddTask.vue"
+import EditTask from "@/views/TaskList/EditTask.vue"
 
 
 const basicRoutes = [
@@ -41,12 +42,20 @@ const basicRoutes = [
         name: 'TaskList',
     },
     {
-        path: '/tasklist/:id',
+        path: '/tasklist/add',
         components: {
             default:AddTask,
             TopSideBar:Navigation
         },
         name: 'AddTaskList',
+    },
+    {
+        path: '/tasklist/edit/:id',
+        components: {
+            default:EditTask,
+            TopSideBar:Navigation
+        },
+        name: 'EditTaskList',
     }
 ]
 

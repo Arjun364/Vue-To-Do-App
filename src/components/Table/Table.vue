@@ -62,6 +62,12 @@ const HandleAdd =()=>{
         path:`${currentRoute.value}/add`
     })
 }
+
+const handleEdit =(row)=>{
+    router.push({
+        path:`${currentRoute.value}/edit/${row}`
+    })
+}
 </script>
 
 <template>
@@ -83,7 +89,7 @@ const HandleAdd =()=>{
                        {{ getColumnData(row,column)}}
                     </td>
                     <td class="p-2 border border-slate-400 text-center">
-                        <span class="text-blue-900">Edit</span>
+                        <span class="text-blue-900" @click="handleEdit(row.id)">Edit</span>
                         <span class="text-red-500">Delete</span>
                     </td>
                 </tr>
